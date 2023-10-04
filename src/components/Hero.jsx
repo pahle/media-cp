@@ -65,19 +65,19 @@ export function Hero() {
         >
           {[
             [
-              { name: 'Tuple', logo: adira },
-              { name: 'Laravel', logo: clipan },
-              { name: 'StaticKit', logo: asia },
+              { name: 'Adira', logo: adira },
+              { name: 'Clipan', logo: clipan },
+              { name: 'Asia', logo: asia },
             ],
             [
-              { name: 'Mirage', logo: bpr },
-              { name: 'Mirage', logo: kresna },
-              { name: 'Statamic', logo: tunas },
+              { name: 'BPR', logo: bpr },
+              { name: 'Kresna', logo: kresna },
+              { name: 'Tunas', logo: tunas },
             ],
             [
-              { name: 'Statamic', logo: kreditplus },
-              { name: 'Laravel', logo: mnc },
-              { name: 'Transistor', logo: acc },
+              { name: 'Kreditplus', logo: kreditplus },
+              { name: 'MNC', logo: mnc },
+              { name: 'ACC', logo: acc },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
