@@ -4,9 +4,9 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { About } from '@/components/About'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { Portfolios } from '@/components/Portfolios'
 
 export default function Home() {
   return (
@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
+        <About />
         <SecondaryFeatures />
         <CallToAction />
-        <Testimonials />
+        <Portfolios />
         <Pricing />
         <Faqs />
       </main>

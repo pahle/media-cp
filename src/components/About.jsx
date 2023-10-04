@@ -1,59 +1,45 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import Image from 'next/image'
+import backgroundAbout from '@/images/background-about.jpg'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Kualitas Layanan Terbaik',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempus id, iaculis ut nisi',
   },
   {
-    title: 'Claim expenses',
+    title: 'Ahli Dalam Bidangnya',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempus id, iaculis ut nisi.',
   },
   {
-    title: 'VAT handling',
+    title: 'Harga Terjangkau',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempus id, iaculis ut nisi.',
   },
   {
-    title: 'Reporting',
+    title: 'Dipercaya Oleh Banyak Perusahaan',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempus id, iaculis ut nisi.',
   },
 ]
 
-export function PrimaryFeatures() {
+export function About() {
   return (
     <section
       id="features"
       aria-label="Features for running your books"
-      className="featureBg relative overflow-hidden bg-red-600 pb-28 pt-20 sm:py-32"
+      className="ctaBg relative overflow-hidden bg-red-600 pb-28 pt-20 sm:py-32"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            About
+            Tentang Kami
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
+            elit, tristique quis tempus id, iaculis ut nisi.
           </p>
         </div>
         <div
@@ -68,7 +54,7 @@ export function PrimaryFeatures() {
                     key={feature.title}
                     className="group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6"
                   >
-                    <div className="font-display text-lg ui-not-focus-visible:outline-none text-white">
+                    <div className="font-display text-lg text-white ui-not-focus-visible:outline-none">
                       {feature.title}
                     </div>
                     <p className="mt-2 text-sm text-blue-100">
@@ -81,13 +67,15 @@ export function PrimaryFeatures() {
             <div className="lg:col-span-7">
               <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                 {/* <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      /> */}
-                <div className="h-[45rem]">test</div>
+                  className="w-full"
+                  src={backgroundAbout}
+                  alt=""
+                  priority
+                  sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                /> */}
+                <div className='h-[45rem] w-full flex justify-center items-center'>
+                  image
+                </div>
               </div>
             </div>
           </>
